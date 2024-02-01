@@ -16,15 +16,22 @@
   </head>
   <body>
     <div class="container">
-      <div class="text-container">
-        <label for="">Prompt</label>
-        <textarea class="prompt" id="prompt"></textarea>
-        <button id="submit">Submit</button>
+      <div class="text-containers">
+        <div class="text-container">
+          <label for="Prompt">Prompt</label>
+          <textarea autocomplete="off" class="prompt" id="prompt"></textarea>
+        </div>
+        <div class="text-container">
+          <label for="Answer">Answer</label>
+          <textarea
+            readonly
+            autocomplete="off"
+            class="answer"
+            id="answer"
+          ></textarea>
+        </div>
       </div>
-      <div class="text-container">
-        <label for="">Answer</label>
-        <textarea class="answer" id="answer"></textarea>
-      </div>
+      <button id="submit">Submit</button>
     </div>
   </body>
   <script src="js/scripts.js"></script>
