@@ -1,19 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 $background: #343541;
 $text-color: #fff;
@@ -33,11 +18,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #2c2c38;
+  color: #ffffff;
+  text-align: center;
 }
 
 a {
@@ -48,20 +36,41 @@ img {
   display: block;
 }
 
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
 textarea {
-  background: $background;
+  width: 300px;
+  height: 150px;
+  background-color: #384259;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
   resize: none;
-  border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
-  color: $text-color;
-  padding: 20px;
+  font-family: "Inter", sans-serif;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &:focus {
+    border-color: #5c5cff;
+    box-shadow: 0 0 5px #5c5cff;
+  }
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #e0e0e0;
 }
 
 button {
   border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
 }
 
@@ -71,26 +80,20 @@ button {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background: $background;
-  color: $text-color;
+  // background: $background;
+  // color: $text-color;
 
   .text-containers {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
     .text-container {
       display: flex;
       justify-content: center;
       align-items: start;
       flex-direction: column;
-
-      textarea {
-        border: 1px solid $border-color;
-        border-radius: 10px;
-        height: 200px;
-        margin: 20px 20px 20px 0;
-      }
 
       .answer {
         cursor: default;
@@ -99,12 +102,18 @@ button {
   }
 
   button {
-    border-radius: 10px;
-    padding: 10px;
-    transition: 0.15s ease-in-out;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5c5cff;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
     &:hover {
-      opacity: 0.75;
+      background-color: #4949db;
     }
   }
 }
