@@ -1,6 +1,6 @@
 # LlamaTalk
 
-![llamatalk](https://github.com/user-attachments/assets/07bf2af6-a56b-44de-934d-844b9765b0dd)
+![llamatalk](https://github.com/user-attachments/assets/d2fdb3f1-6871-4da9-8c0c-b210b9ba8be3)
 
 ## Inspiration
 
