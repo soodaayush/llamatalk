@@ -4,15 +4,19 @@
 
 ## Inspiration
 
-I wanted to make my very own local chatbot with an interface.
+I wanted to make my very own local chatbot with an interface. When I discovered that it wasn't that hard due to an easy-to-use service called Ollama, I decided to experiment with making a local chatbot website. 
 
 ## Challenges
 
-Connecting the LLM to the website itself.
+Connecting the LLM to the website itself and making sure the correct objects were used within the response object. 
+
+## Lessons Learned
+
+I learned about using the Ollama service and how to send and fetch data from the LLM.
 
 ## The Website
 
-A chatbot powered by Meta's Codellama. As of now, you must run the LLM locally through a service called Ollama. You can customize which model you can use depending upon the number of parameters.
+A chatbot powered by Meta's Codellama. You can ask it a question, and you will get a response. As of now, you must run the LLM locally on your machine through a service called Ollama. From there, your LLM will be hosted on a localhost server, which you can define in the JavaScript file. From there, LlamaTalk uses the localhost to provide a prompt and receive a response. You can customize the code to use any modal of any parameter count as you please.
 
 ## Links
 
