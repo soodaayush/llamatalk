@@ -7,7 +7,12 @@ submit.addEventListener("click", submitPrompt);
 let parsedResponses = [];
 
 async function submitPrompt() {
-  answer.textContent = "";
+  if (prompt.value === "") {
+    alert("Please input a prompt");
+    return;
+  }
+
+  answerBox.value = "Loading...";
 
   let modelObj = { model: "codellama:13b", prompt: prompt.value };
 
@@ -33,7 +38,9 @@ async function submitPrompt() {
 }
 
 function printAnswer(answer) {
+  answerBox.value = "";
+
   for (let i = 0; i < answer.length; i++) {
-    answerBox.textContent += answer[i].response;
+    answerBox.value += answer[i].response;
   }
 }
