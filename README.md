@@ -8,7 +8,7 @@ I wanted to create my own local chatbot with an interface. When I discovered tha
 
 ## Challenges
 
-Connecting the LLM to the website itself and ensuring the correct objects were used within the response object.
+Connecting the Large Language Model (LLM) to the website itself and ensuring the correct objects were used within the response object.
 
 ## Lessons Learned
 
