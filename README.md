@@ -4,19 +4,24 @@
 
 ## Inspiration
 
-I wanted to create my own local chatbot with an interface. When I discovered that it was not difficult due to an easy-to-use service called Ollama, I decided to experiment with making a local chatbot website.
+I’ve always wanted a personal chatbot that runs locally, something private, responsive, and customizable. When I discovered Ollama, which makes running LLMs locally super straightforward, I decided to build a minimal front-end that lets anyone interact with an LLM through a browser interface.
 
 ## Challenges
 
-Connecting the Large Language Model (LLM) to the website itself and ensuring the correct objects were used within the response object.
+- Establishing a reliable connection between the front-end and the local LLM service
+- Properly formatting the request and parsing the LLM's response
+- Ensuring a seamless user experience with fast, local responses
 
 ## Lessons Learned
 
-I learned about using the Ollama service and how to send and fetch data from the LLM.
+- How to run and interact with local LLMs via Ollama
+- Sending and receiving JSON data using `fetch` in JavaScript
+- Handling response objects and dynamically updating the UI
+- Customizing models and experimenting with local inference setups
 
 ## The Website
 
-A chatbot powered by Meta's Codellama. You can ask it a question, and you will get a response. As of now, you must run the LLM locally on your machine through a service called Ollama. From there, your LLM will be ran on a localhost server, which you can define in the JavaScript file. LlamaTalk uses the localhost to provide a prompt and receive a response. You can customize the code to use any model with any parameter count as you please.
+LlamaTalk is a simple, sleek interface for chatting with locally hosted LLMs via Ollama. Powered by Meta's CodeLlama, LlamaTalk lets you ask questions and get intelligent responses, all while keeping everything on your own machine.
 
 ## Links
 
